@@ -1,0 +1,12 @@
+(section
+  (title "OpenGL.State")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.State") " package provides
+    subprograms to query and modify the GL state.")
+
+  (include "a-opengl-state-types.ud")
+  (include "a-opengl-state-enable.ud")
+  (include "a-opengl-state-disable.ud")
+  (include "a-opengl-state-is_enabled.ud")
+)

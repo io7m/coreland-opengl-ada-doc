@@ -1,0 +1,23 @@
+(section
+  (ref "opengl_error_get_error")
+  (title "OpenGL.Error.Get_Error")
+  (para function_desc "Retrieve current error code.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenGL.Error;
+
+function Get_Error return Error_t;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Get_Error") " function
+      returns the current error code. Each call to any " (item package "OpenGL") "
+      subprogram may overwrite this value."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Get_Error") " subprogram is roughly
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glGetError.xml" "glGetError") ".")))

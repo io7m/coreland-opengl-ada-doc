@@ -1,0 +1,7 @@
+(section
+  (title "Types")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Types") " package provides
+    various types for use with the " (item package "OpenGL") " API.")
+)

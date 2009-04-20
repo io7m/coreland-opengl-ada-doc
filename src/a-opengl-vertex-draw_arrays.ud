@@ -1,0 +1,31 @@
+(section
+  (ref "opengl_vertex_draw_arrays")
+  (title "OpenGL.Vertex.Draw_Arrays")
+  (para procedure_desc "Render primitives from array data.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Vertex;
+
+procedure Draw_Arrays
+  (Mode  : in Primitive_Type_t;
+   First : in Attribute_Index_t;
+   Count : in Attribute_Count_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Draw_Arrays") " procedure
+      renders " (item parameter "Count") " elements of
+      each enabled array, starting at " (item parameter "First") ".")
+    (para
+      "Primitives constructed are of type " (item parameter "Mode") ".")
+    (para
+      "If vertex arrays are not enabled, no geometric primitives are
+       created."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Draw_Arrays") " subprogram is
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glDrawArrays.xml" "glDrawArrays") ".")))

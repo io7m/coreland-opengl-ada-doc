@@ -1,0 +1,19 @@
+(section
+  (title "Types")
+
+  (subsection
+    (title "Light_t")
+
+    (para-verbatim ada_type_synopsis
+"type Light_Index_t is
+  (Light_0,
+   Light_1,
+   Light_2,
+   Light_3,
+   Light_4,
+   Light_5,
+   Light_6,
+   Light_7);")
+
+    (para "The " (item ada_type "Light_t") " type specifies
+      the index of a given " (item package "OpenGL") " light.")))

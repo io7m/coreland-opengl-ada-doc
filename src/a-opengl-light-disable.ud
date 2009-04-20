@@ -1,0 +1,22 @@
+(section
+  (ref "opengl_light_disable")
+  (title "OpenGL.Light.Disable")
+  (para procedure_desc "Disable light.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Light;
+
+procedure Disable (Index : in Light_Index_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Disable") " procedure
+      disables the light specified by " (item parameter "Index") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Disable") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glDisable.xml" "glDisable")
+      " with one of the " (item constant "GL_LIGHT") " constants as an argument.")))

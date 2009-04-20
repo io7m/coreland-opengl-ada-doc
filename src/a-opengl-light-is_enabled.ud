@@ -1,0 +1,23 @@
+(section
+  (ref "opengl_light_is_enabled")
+  (title "OpenGL.Light.Is_Enabled")
+  (para function_desc "Check if light is enabled.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenGL.Light;
+
+function Is_Enabled (Light : in Light_Index_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Is_Enabled") " function
+       determines if the light specified by "
+      (item parameter "Light") " is enabled."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Is_Enabled") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glIsEnabled.xml" "glIsEnabled")
+      " with one of the " (item constant "GL_LIGHT") " constants as an argument.")))

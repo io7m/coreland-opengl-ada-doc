@@ -1,0 +1,10 @@
+(section
+  (ref "opengl")
+  (title "OpenGL API Reference")
+  (contents)
+
+  (include "a-opengl-error.ud")
+  (include "a-opengl-light.ud")
+  (include "a-opengl-state.ud")
+  (include "a-opengl-vertex.ud")
+)

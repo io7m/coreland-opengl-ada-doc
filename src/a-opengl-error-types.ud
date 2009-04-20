@@ -1,0 +1,21 @@
+(section
+  (title "Types")
+
+  (subsection
+    (title "Error_t")
+
+    (para-verbatim ada_type_synopsis
+"type Error_t is
+  (No_Error,
+   Invalid_Enum,
+   Invalid_Value,
+   Invalid_Operation,
+   Stack_Overflow,
+   Stack_Underflow,
+   Out_Of_Memory,
+   Invalid_Framebuffer_Operation,
+   Table_Too_Large);")
+
+    (para "The " (item ada_type "Error_t") " type is an enumeration
+      type specifying various error conditions.")))
+

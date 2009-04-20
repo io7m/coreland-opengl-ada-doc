@@ -1,0 +1,21 @@
+(section
+  (title "Types")
+
+  (subsection
+    (title "Attribute_Index_t")
+
+    (para-verbatim ada_type_synopsis
+"type Attribute_Index_t is range 0 .. implementation-defined;")
+
+    (para "The " (item ada_type "Attribute_Index_t") " is used to
+      specify indices of generic attribute arrays."))
+
+  (subsection
+    (title "Attribute_Count_t")
+
+    (para-verbatim ada_type_synopsis
+"type Attribute_Count_t is range 0 .. implementation-defined;")
+
+    (para "The " (item ada_type "Attribute_Count_t") " is used to
+      select a number of elements of a generic attribute array."))
+)

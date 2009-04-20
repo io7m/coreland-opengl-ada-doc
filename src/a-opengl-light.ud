@@ -1,0 +1,12 @@
+(section
+  (title "OpenGL.Light")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Light") " package provides
+    subprograms to control " (item package "OpenGL") " lighting.")
+
+  (include "a-opengl-light-types.ud")
+  (include "a-opengl-light-enable.ud")
+  (include "a-opengl-light-disable.ud")
+  (include "a-opengl-light-is_enabled.ud")
+)

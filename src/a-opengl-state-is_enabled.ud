@@ -1,0 +1,23 @@
+(section
+  (ref "opengl_state_is_enabled")
+  (title "OpenGL.State.Is_Enabled")
+  (para function_desc "Check if capability is enabled.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenGL.State;
+
+function Is_Enabled (Capability : in Capability_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Is_Enabled") " function
+       determines if the capability specified by "
+      (item parameter "Capability") " is enabled."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Is_Enabled") " subprogram is roughly
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glIsEnabled.xml" "glIsEnabled") ".")))

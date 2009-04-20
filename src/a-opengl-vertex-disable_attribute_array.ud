@@ -1,0 +1,23 @@
+(section
+  (ref "opengl_vertex_disable_attribute_array")
+  (title "OpenGL.Vertex.Disable_Attribute_Array")
+  (para procedure_desc "Disable a generic vertex attribute array.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Vertex;
+
+procedure Disable_Attribute_Array (Index : in Attribute_Index_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Disable_Attribute_Array") " procedure
+      disables the generic vertex attribute array specified by "
+      (item parameter "Index") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Disable_Attribute_Array") " subprogram is
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glDisableVertexAttribArray.xml" "glDisableVertexAttribArray") ".")))

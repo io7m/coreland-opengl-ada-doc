@@ -1,0 +1,22 @@
+(section
+  (ref "opengl_state_disable")
+  (title "OpenGL.State.Disable")
+  (para procedure_desc "Disable capability.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.State;
+
+procedure Disable (Capability : in Capability_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Disable") " procedure
+      disables the capability specified by " (item parameter "Capability") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Disable") " subprogram is roughly
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glDisable.xml" "glDisable") ".")))

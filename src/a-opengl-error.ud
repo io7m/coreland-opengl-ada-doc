@@ -1,0 +1,10 @@
+(section
+  (title "OpenGL.Error")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Error") " package provides
+    subprograms to query the GL state.")
+
+  (include "a-opengl-error-types.ud")
+  (include "a-opengl-error-get_error.ud")
+)
