@@ -1,0 +1,24 @@
+(section
+  (ref "opengl_buffer_delete")
+  (title "OpenGL.Buffer.Delete")
+  (para procedure_desc "Delete buffer object names.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Buffer;
+
+procedure Delete (Buffers : in Buffer_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Delete") " procedure
+       deletes " (item parameter "Buffers")
+      "'" (item ada_attribute "Length") " buffer names from "
+      (item parameter "Buffers") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Delete") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glDeleteBuffers.xml"
+      "glDeleteBuffers") ".")))

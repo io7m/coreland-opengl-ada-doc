@@ -1,0 +1,59 @@
+(section
+  (ref "opengl_buffer_map_range")
+  (title "OpenGL.Buffer.Map_Range")
+  (para procedure_desc "Map range of buffer object data store to address space.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Buffer;
+
+Read_Bit              : constant Access_Policy_t;
+Write_Bit             : constant Access_Policy_t;
+Invalidate_Range_Bit  : constant Access_Policy_t;
+Invalidate_Buffer_Bit : constant Access_Policy_t;
+Flush_Explicit_Bit    : constant Access_Policy_t;
+Unsynchronized_Bit    : constant Access_Policy_t;
+
+generic
+  type Element_Type is private;
+  type Index_Type   is range <>;
+
+function Map_Range
+  (Target        : in Target_t;
+   Offset        : in Index_Type;
+   Length        : in Index_Type;
+   Access_Policy : in Access_Policy_t) return System.Address;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Map_Range") " function maps "
+      (item parameter "Length") " elements of type "
+      (item ada_type "Element_Type") ", starting at "
+      (item parameter "Offset") " from the data store of the currently
+      bound buffer object into the client address space.
+      The " (item parameter "Access_Policy") " parameter specifies how the
+      mapped memory will be used. The function returns the address of
+      the mapped memory. The address is intended to be used as an overlay:")
+    (para-verbatim example
+"function Map_Range is new OpenGL.Buffer.Map_Range
+  (Element_Type => Float,
+   Index_Type   => Natural);
+
+Mapped : array (1 .. 10) of Float;
+for Mapped'Address use Map_Range
+  (Target        => OpenGL.Buffer.Array_Buffer,
+   Offset        => 0,
+   Length        => 10,
+   Access_Policy => OpenGL.Buffer.Read_Bit or OpenGL.Buffer.Write_Bit);"))
+  (subsection
+    (title "Exceptions")
+    (para "The function raises " (item ada_exception "Constraint_Error")
+      " any error occurs on the server side (possibly due to resource
+      exhaustion)."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Map_Range") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glMapBufferRange.xml"
+      "glMapBufferRange") ".")))

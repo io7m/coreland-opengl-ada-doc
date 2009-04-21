@@ -1,0 +1,15 @@
+(section
+  (title "OpenGL.Buffer")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Buffer") " package provides
+    access to high performance server memory buffers.")
+
+  (include "a-opengl-buffer-types.ud")
+  (include "a-opengl-buffer-generate.ud")
+  (include "a-opengl-buffer-delete.ud")
+  (include "a-opengl-buffer-bind.ud")
+  (include "a-opengl-buffer-data.ud")
+  (include "a-opengl-buffer-sub_data.ud")
+  (include "a-opengl-buffer-map_range.ud")
+)

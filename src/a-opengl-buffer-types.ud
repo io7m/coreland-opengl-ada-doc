@@ -1,0 +1,40 @@
+(section
+  (title "Types")
+
+  (subsection
+    (title "Target_t")
+
+    (para-verbatim ada_type_synopsis
+"type Target_t is
+  (Array_Buffer,
+   Copy_Read_Buffer,
+   Copy_Write_Buffer,
+   Element_Array_Buffer,
+   Pixel_Pack_Buffer,
+   Pixel_Unpack_Buffer,
+   Texture_Buffer,
+   Transform_Feedback_Buffer,
+   Uniform_Buffer);")
+
+    (para "The " (item ada_type "Target_t") " type is an enumeration
+      type specifying various buffer targets."))
+
+  (subsection
+    (title "Usage_t")
+
+    (para-verbatim ada_type_synopsis
+"type Usage_t is
+  (Stream_Draw,
+   Stream_Read,
+   Stream_Copy,
+   Static_Draw,
+   Static_Read,
+   Static_Copy,
+   Dynamic_Draw,
+   Dynamic_Read,
+   Dynamic_Copy);")
+
+    (para "The " (item ada_type "Usage_t") " type is an enumeration
+      type specifying the expected usage pattern for buffer object
+      data stores."))
+)
