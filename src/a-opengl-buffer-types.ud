@@ -2,6 +2,15 @@
   (title "Types")
 
   (subsection
+    (title "Generic parameters")
+
+    (para-verbatim ada_generic_synopsis
+"generic
+  type Element_Type is private;
+  type Index_Type   is range <>;
+  type Array_Type   is array (Index_Type range <>) of aliased Element_Type;"))
+
+  (subsection
     (title "Target_t")
 
     (para-verbatim ada_type_synopsis

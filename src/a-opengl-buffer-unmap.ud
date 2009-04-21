@@ -1,0 +1,26 @@
+(section
+  (ref "opengl_buffer_unmap")
+  (title "OpenGL.Buffer.Unmap")
+  (para function_desc "Unmap data store of buffer object.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim function_synopsis
+"with OpenGL.Buffer;
+
+function Unmap (Target : in Target_t) return Boolean;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_function "Unmap") " function unmaps the
+      data store of the currently bound buffer object of type "
+      (item parameter "Target") ".")
+    (para
+      "The function returns " (item constant "True") " on success
+      and " (item constant "False") " otherwise."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Unmap") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glUnmapBuffer.xml"
+      "glUnmapBuffer") ".")))

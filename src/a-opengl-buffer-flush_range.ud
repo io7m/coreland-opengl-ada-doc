@@ -1,0 +1,27 @@
+(section
+  (ref "opengl_buffer_flush_range")
+  (title "OpenGL.Buffer.Flush_Range")
+  (para procedure_desc "Flush range of buffer object's data store.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Buffer;
+
+procedure Flush_Range
+  (Target : in Target_t;
+   Offset : in Index_Type;
+   Length : in Index_Type);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Flush_Range") " procedure flushes
+      modifications made to " (item parameter "Length") " elements of
+      the currently mapped buffer object's data store, starting at element "
+      (item parameter "Offset") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Flush_Range") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glFlushMappedBufferRange.xml"
+      "glFlushMappedBufferRange") ".")))

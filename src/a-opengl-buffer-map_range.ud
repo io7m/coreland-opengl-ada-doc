@@ -14,10 +14,6 @@ Invalidate_Buffer_Bit : constant Access_Policy_t;
 Flush_Explicit_Bit    : constant Access_Policy_t;
 Unsynchronized_Bit    : constant Access_Policy_t;
 
-generic
-  type Element_Type is private;
-  type Index_Type   is range <>;
-
 function Map_Range
   (Target        : in Target_t;
    Offset        : in Index_Type;
@@ -45,7 +41,12 @@ for Mapped'Address use Map_Range
   (Target        => OpenGL.Buffer.Array_Buffer,
    Offset        => 0,
    Length        => 10,
-   Access_Policy => OpenGL.Buffer.Read_Bit or OpenGL.Buffer.Write_Bit);"))
+   Access_Policy => OpenGL.Buffer.Read_Bit or OpenGL.Buffer.Write_Bit);")
+    (para
+      "Please consult the "
+      (link-ext "http://www.opengl.org/documentation/specs/"
+        "OpenGL specification") " for the semantics of the "
+        (item parameter "Access_Policy") " values."))
   (subsection
     (title "Exceptions")
     (para "The function raises " (item ada_exception "Constraint_Error")

@@ -7,11 +7,6 @@
     (para-verbatim procedure_synopsis
 "with OpenGL.Buffer;
 
-generic
-  type Element_Type is private;
-  type Index_Type   is range <>;
-  type Array_Type   is array (Index_Type range <>) of aliased Element_Type;
-
 procedure Data
   (Target : in Target_t;
    Data   : in Array_Type;

@@ -1,0 +1,31 @@
+(section
+  (ref "opengl_buffer_map")
+  (title "OpenGL.Buffer.Map")
+  (para procedure_desc "Map buffer object data store to address space.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Buffer;
+
+function Map
+  (Target        : in Target_t;
+   Access_Policy : in Access_Policy_t) return System.Address;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Map") " function is equivalent
+      to " (link "opengl_buffer_map_range" "OpenGL.Buffer.Map_Range")
+      " except that the entire data store is mapped, starting at the
+      first element."))
+  (subsection
+    (title "Exceptions")
+    (para "The function raises " (item ada_exception "Constraint_Error")
+      " any error occurs on the server side (possibly due to resource
+      exhaustion)."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Map") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glMapBuffer.xml"
+      "glMapBuffer") ".")))

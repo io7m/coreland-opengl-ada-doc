@@ -116,6 +116,7 @@ table.exception_table td {
 .function_synopsis,
 .procedure_synopsis,
 .ada_type_synopsis,
+.ada_generic_synopsis,
 .tag_synopsis
 {
   border: 1px solid #ddd;
