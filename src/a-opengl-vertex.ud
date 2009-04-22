@@ -6,6 +6,7 @@
     subprograms to manipulate vertices and geometric primitives.")
 
   (include "a-opengl-vertex-types.ud")
+  (include "a-opengl-vertex-generate_arrays.ud")
   (include "a-opengl-vertex-draw_arrays.ud")
   (include "a-opengl-vertex-enable_attribute_array.ud")
   (include "a-opengl-vertex-disable_attribute_array.ud")

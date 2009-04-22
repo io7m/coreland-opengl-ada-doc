@@ -1,0 +1,24 @@
+(section
+  (ref "opengl_vertex_Generate_Arrays")
+  (title "OpenGL.Vertex.Generate_Arrays")
+  (para procedure_desc "Generate array names.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Vertex;
+
+procedure Generate_Arrays
+  (Arrays : in out Array_Index_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Generate_Arrays") " procedure
+      generates " (item parameter "Arrays") "'" (item ada_attribute "Length")
+      " vertex array names."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Generate_Arrays") " subprogram is
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glGenVertexArrays.xml" "glGenVertexArrays") ".")))
