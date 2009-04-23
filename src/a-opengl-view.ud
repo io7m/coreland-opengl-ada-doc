@@ -3,7 +3,8 @@
   (ref "opengl_view")
 
   (para "The " (item ada_package "OpenGL.View") " package provides
-    access to viewport, transformation and matrix handling.")
+    access to viewport handling.")
 
   (include "a-opengl-view-depth_range.ud")
+  (include "a-opengl-view-viewport.ud")
 )

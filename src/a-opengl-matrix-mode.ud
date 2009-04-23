@@ -1,0 +1,22 @@
+(section
+  (ref "opengl_matrix_mode")
+  (title "OpenGL.Matrix.Mode")
+  (para procedure_desc "Specify current matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+
+procedure Mode (Mode : in OpenGL.Matrix.Mode_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Mode") " procedure sets the current
+      matrix mode."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Mode") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glMatrixMode.xml"
+      "glMatrixMode") ".")))

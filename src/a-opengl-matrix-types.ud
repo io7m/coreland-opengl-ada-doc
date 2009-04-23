@@ -1,0 +1,12 @@
+(section
+  (title "Types")
+
+  (subsection
+    (title "Mode_t")
+
+    (para-verbatim ada_type_synopsis
+"type Mode_t is (Texture, Modelview, Color, Projection);")
+
+    (para "The " (item ada_type "Mode_t") " type is an enumeration
+      type specifying various matrix modes."))
+)

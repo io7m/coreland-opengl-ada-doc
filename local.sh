@@ -8,9 +8,16 @@ fatal()
   exit 1
 }
 
+info()
+{
+  echo "info: $1" 1>&2
+}
+
 #
 # Make procedure map
 #
+
+info "building procedure map"
 
 cat >> src/m_proc_map.ud.tmp <<EOF
 (table procedure_map
@@ -20,6 +27,7 @@ EOF
 (
 for spec in ${OPENGL_SRC}/opengl-*.ads
 do
+  info "processing $spec"
   ./make-proc_map.lua "$spec" || fatal "could not create proc map for $spec"
 done
 ) | sort -k 3 >> src/m_proc_map.ud.tmp

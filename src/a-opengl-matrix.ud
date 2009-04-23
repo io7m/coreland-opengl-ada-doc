@@ -1,0 +1,10 @@
+(section
+  (title "OpenGL.Matrix")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Matrix") " package provides
+    access to the " (item package "OpenGL") " matrix facilities.")
+
+  (include "a-opengl-matrix-types.ud")
+  (include "a-opengl-matrix-mode.ud")
+)

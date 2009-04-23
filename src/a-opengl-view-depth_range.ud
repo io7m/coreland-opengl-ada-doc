@@ -18,7 +18,7 @@ procedure Depth_Range
       "The " (item ada_procedure "Depth_Range") " specifies a linear mapping of
       the normalized depth coordinates in this range to window depth
       coordinates. With the setting of " (item parameter "Near") " = "
-      (item constant "0.0") " and " (item parameter "Near") " = "
+      (item constant "0.0") " and " (item parameter "Far") " = "
       (item constant "1.0") ", the depth buffer range is fully utilized."))
   (subsection
     (title "Mapping")

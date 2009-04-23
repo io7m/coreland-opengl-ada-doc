@@ -22,5 +22,7 @@
 (t-row (item "glIsEnabled")(item (link "opengl_state_is_enabled" "OpenGL.State.Is_Enabled")))
 (t-row (item "glMapBuffer")(item (link "opengl_buffer_map" "OpenGL.Buffer.Map")))
 (t-row (item "glMapBufferRange")(item (link "opengl_buffer_map_range" "OpenGL.Buffer.Map_Range")))
+(t-row (item "glMatrixMode")(item (link "opengl_matrix_mode" "OpenGL.Matrix.Mode")))
 (t-row (item "glUnmapBuffer")(item (link "opengl_buffer_unmap" "OpenGL.Buffer.Unmap")))
+(t-row (item "glViewport")(item (link "opengl_view_viewport" "OpenGL.View.Viewport")))
 )

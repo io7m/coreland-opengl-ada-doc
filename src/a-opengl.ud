@@ -6,6 +6,7 @@
   (include "a-opengl-buffer.ud")
   (include "a-opengl-error.ud")
   (include "a-opengl-light.ud")
+  (include "a-opengl-matrix.ud")
   (include "a-opengl-state.ud")
   (include "a-opengl-thin.ud")
   (include "a-opengl-vertex.ud")
