@@ -7,7 +7,7 @@
     (para-verbatim procedure_synopsis
 "with OpenGL.Texture;
 
-type Target_3D_t is (Texture_3D, Proxy_Texture_3D);
+type Target_3D_t is (Texture_3D, Proxy_Texture_3D, Texture_Rectangle_ARB);
 
 procedure Image_3D
   (Target          : in Target_3D_t;

@@ -16,7 +16,8 @@ type Target_2D_t is
   Texture_Cube_Map_Negative_Y,
   Texture_Cube_Map_Positive_Z,
   Texture_Cube_Map_Negative_Z,
-  Proxy_Texture_Cube_Map);
+  Proxy_Texture_Cube_Map,
+  Texture_Rectangle_ARB);
 
 procedure Image_2D
   (Target          : in Target_2D_t;
