@@ -1,0 +1,12 @@
+(section
+  (title "OpenGL.Texture")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Texture") " package provides
+    access to " (item package "OpenGL") " textures.")
+
+  (include "a-opengl-texture-types.ud")
+  (include "a-opengl-texture-image_1d.ud")
+  (include "a-opengl-texture-image_2d.ud")
+  (include "a-opengl-texture-image_3d.ud")
+)

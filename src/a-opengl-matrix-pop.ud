@@ -1,0 +1,22 @@
+(section
+  (ref "opengl_matrix_pop")
+  (title "OpenGL.Matrix.Pop")
+  (para procedure_desc "Pop current matrix stack.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+
+procedure Pop;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Pop") " procedure pops the current matrix stack,
+      replacing the current matrix with the one below it on the stack."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Pop") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glPopMatrix.xml"
+      "glPopMatrix") ".")))

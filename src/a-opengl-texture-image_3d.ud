@@ -1,0 +1,34 @@
+(section
+  (ref "opengl_texture_image_3d")
+  (title "OpenGL.Texture.Image_3D")
+  (para procedure_desc "Specify a three-dimensional texture image.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Texture;
+
+type Target_3D_t is (Texture_3D, Proxy_Texture_3D);
+
+procedure Image_3D
+  (Target          : in Target_3D_t;
+   Level           : in Natural;
+   Internal_Format : in Internal_Format_t;
+   Width           : in Positive;
+   Height          : in Positive;
+   Depth           : in Positive;
+   Border          : in Border_Width_t;
+   Format          : in Format_t;
+   Data            : in Data_Array_t;
+   Data_Type       : in Data_Type_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Image_3D") " specifies a three-dimensional
+      texture image."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Image_3D") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glTexImage3D.xml"
+      "glTexImage3D") ".")))

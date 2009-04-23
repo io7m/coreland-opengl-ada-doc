@@ -1,0 +1,120 @@
+(section
+  (title "Types")
+
+  (subsection
+    (title "Border_Width_t")
+    (para-verbatim ada_type_synopsis
+"type Border_Width_t is range 0 .. 1;")
+    (para "The " (item ada_type "Border_Width_t") " type specifies border
+      widths for textures."))
+
+  (subsection
+    (title "Internal_Format_t")
+
+    (para-verbatim ada_type_synopsis
+"type Internal_Format_t is
+ (Alpha,
+  Alpha_4,
+  Alpha_8,
+  Alpha_12,
+  Alpha_16,
+  Compressed_Alpha,
+  Compressed_Luminance,
+  Compressed_Luminance_Alpha,
+  Compressed_Intensity,
+  Compressed_RGB,
+  Compressed_RGBA,
+  Luminance,
+  Luminance_4,
+  Luminance_8,
+  Luminance_12,
+  Luminance_16,
+  Luminance_Alpha,
+  Luminance_4_Alpha_4,
+  Luminance_6_Alpha_2,
+  Luminance_8_Alpha_8,
+  Luminance_12_Alpha_4,
+  Luminance_12_Alpha_12,
+  Luminance_16_Alpha_16,
+  Intensity,
+  Intensity_4,
+  Intensity_8,
+  Intensity_12,
+  Intensity_16,
+  R3_G3_B2,
+  RGB,
+  RGB_4,
+  RGB_5,
+  RGB_8,
+  RGB_10,
+  RGB_12,
+  RGB_16,
+  RGBA,
+  RGBA_2,
+  RGBA_4,
+  RGB5_A1,
+  RGBA_8,
+  RGB10_A2,
+  RGBA_12,
+  RGBA_16,
+  SLuminance,
+  SLuminance_8,
+  SLuminance_Alpha,
+  SLuminance_8_Alpha_8,
+  SRGB,
+  SRGB_8,
+  SRGB_Alpha,
+  SRGB_8_Alpha_8);")
+
+    (para "The " (item ada_type "Internal_Format_t") " type is an enumeration
+      type specifying various internal texture formats."))
+
+  (subsection
+    (title "Format_t")
+
+    (para-verbatim ada_type_synopsis
+"type Format_t is
+ (Color_Index,
+  Red,
+  Green,
+  Blue,
+  Alpha,
+  RGB,
+  BGR,
+  RGBA,
+  BGRA,
+  Luminance,
+  Luminance_Alpha);")
+
+    (para "The " (item ada_type "Format_t") " type is an enumeration
+      type specifying pixel data formats."))
+
+  (subsection
+    (title "Data_Type_t")
+    (para-verbatim ada_type_synopsis
+"  type Data_Type_t is
+   (Unsigned_Byte,
+    Byte,
+    Bitmap,
+    Unsigned_Short,
+    Short,
+    Unsigned_Integer,
+    Integer,
+    Float,
+    Unsigned_Byte_3_3_2,
+    Unsigned_Byte_2_3_3_Rev,
+    Unsigned_Short_5_6_5,
+    Unsigned_Short_5_6_5_Rev,
+    Unsigned_Short_4_4_4_4,
+    Unsigned_Short_4_4_4_4_Rev,
+    Unsigned_Short_5_5_5_1,
+    Unsigned_Short_1_5_5_5_Rev,
+    Unsigned_Integer_8_8_8_8,
+    Unsigned_Integer_8_8_8_8_Rev,
+    Unsigned_Integer_10_10_10_2,
+    Unsigned_Integer_2_10_10_10_Rev);")
+
+    (para "The " (item ada_type "Data_Type_t") " type is an enumeration
+      type specifying the data type of individual elements of pixel data."))
+
+)

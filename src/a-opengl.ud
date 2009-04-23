@@ -8,6 +8,7 @@
   (include "a-opengl-light.ud")
   (include "a-opengl-matrix.ud")
   (include "a-opengl-state.ud")
+  (include "a-opengl-texture.ud")
   (include "a-opengl-thin.ud")
   (include "a-opengl-vertex.ud")
   (include "a-opengl-view.ud")

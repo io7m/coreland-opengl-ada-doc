@@ -1,0 +1,29 @@
+(section
+  (ref "opengl_matrix_frustum")
+  (title "OpenGL.Matrix.Frustum")
+  (para procedure_desc "Multiply matrix by perspective matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+with OpenGL.Types;
+
+procedure Frustum
+  (Left   : in OpenGL.Types.Double_t;
+   Right  : in OpenGL.Types.Double_t;
+   Bottom : in OpenGL.Types.Double_t;
+   Top    : in OpenGL.Types.Double_t;
+   Near   : in OpenGL.Types.Double_t;
+   Far    : in OpenGL.Types.Double_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Frustum") " procedure multiplies the current
+      matrix by a perspective matrix."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Frustum") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glFrustum.xml"
+      "glFrustum") ".")))

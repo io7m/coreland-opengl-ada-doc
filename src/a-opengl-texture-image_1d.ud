@@ -1,0 +1,32 @@
+(section
+  (ref "opengl_texture_image_1d")
+  (title "OpenGL.Texture.Image_1D")
+  (para procedure_desc "Specify a one-dimensional texture image.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Texture;
+
+type Target_1D_t is (Texture_1D, Proxy_Texture_1D);
+
+procedure Image_1D
+  (Target          : in Target_1D_t;
+   Level           : in Natural;
+   Internal_Format : in Internal_Format_t;
+   Width           : in Positive;
+   Border          : in Border_Width_t;
+   Format          : in Format_t;
+   Data            : in Data_Array_t;
+   Data_Type       : in Data_Type_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Image_1D") " specifies a one-dimensional
+      texture image."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Image_1D") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glTexImage1D.xml"
+      "glTexImage1D") ".")))

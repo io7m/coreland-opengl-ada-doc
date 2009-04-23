@@ -14,4 +14,8 @@
   (include "a-opengl-matrix-scale.ud")
   (include "a-opengl-matrix-translate.ud")
   (include "a-opengl-matrix-rotate.ud")
+  (include "a-opengl-matrix-frustum.ud")
+  (include "a-opengl-matrix-ortho.ud")
+  (include "a-opengl-matrix-push.ud")
+  (include "a-opengl-matrix-pop.ud")
 )
