@@ -1,5 +1,5 @@
 (section
-  (ref "opengl_vertex_Generate_Arrays")
+  (ref "opengl_vertex_generate_arrays")
   (title "OpenGL.Vertex.Generate_Arrays")
   (para procedure_desc "Generate array names.")
   (subsection

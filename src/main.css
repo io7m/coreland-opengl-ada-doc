@@ -69,6 +69,12 @@ hr {
 table.options { }
 table.options td { vertical-align: top; padding: 0.5em; }
 
+table.procedure_map { }
+table.procedure_map td {
+  vertical-align: top;
+  padding-right: 3em;
+}
+
 table.install_config { }
 table.install_config td {
   vertical-align: top;

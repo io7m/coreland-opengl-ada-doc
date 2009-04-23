@@ -20,4 +20,4 @@ procedure Bind_Array
     (para
       "The " (item ada_subprogram "Bind_Array") " subprogram is
       equivalent to "
-      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glEnableVertexAttribArray.xml" "glEnableVertexAttribArray") ".")))
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glBindVertexArray.xml" "glBindVertexArray") ".")))

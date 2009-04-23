@@ -1,5 +1,5 @@
 (section
-  (ref "opengl_vertex_Delete_Arrays")
+  (ref "opengl_vertex_delete_arrays")
   (title "OpenGL.Vertex.Delete_Arrays")
   (para procedure_desc "Delete array names.")
   (subsection
@@ -21,4 +21,4 @@ procedure Delete_Arrays
     (para
       "The " (item ada_subprogram "Delete_Arrays") " subprogram is
       equivalent to "
-      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glGenVertexArrays.xml" "glGenVertexArrays") ".")))
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glDeleteVertexArrays.xml" "glDeleteVertexArrays") ".")))

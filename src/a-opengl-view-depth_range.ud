@@ -1,0 +1,28 @@
+(section
+  (ref "opengl_view_depth_range")
+  (title "OpenGL.View.Depth_Range")
+  (para procedure_desc "Specify mapping of depth values from normalized device coordinates to window coordinates.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.View;
+with OpenGL.Types;
+
+procedure Depth_Range
+  (Near : in OpenGL.Types.Clamped_Long_Float_t;
+   Far  : in OpenGL.Types.Clamped_Long_Float_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Depth_Range") " specifies a linear mapping of
+      the normalized depth coordinates in this range to window depth
+      coordinates. With the setting of " (item parameter "Near") " = "
+      (item constant "0.0") " and " (item parameter "Near") " = "
+      (item constant "1.0") ", the depth buffer range is fully utilized."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Depth_Range") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glDepthRange.xml"
+      "glDepthRange") ".")))
