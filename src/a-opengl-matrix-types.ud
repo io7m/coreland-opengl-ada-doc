@@ -9,4 +9,26 @@
 
     (para "The " (item ada_type "Mode_t") " type is an enumeration
       type specifying various matrix modes."))
+
+  (subsection
+    (title "Matrix_4x4f_t")
+
+    (para-verbatim ada_type_synopsis
+"type Matrix_4x4f_t is array (1 .. 16) of aliased OpenGL.Types.Float_t;")
+
+    (para "The " (item ada_type "Matrix_4x4f_t") " type specifies
+      a 4x4 matrix of single-precision floating point values. The matrix
+      is aligned on a 16-byte boundary to allow easy processing by
+      external vector hardware."))
+
+  (subsection
+    (title "Matrix_4x4d_t")
+
+    (para-verbatim ada_type_synopsis
+"type Matrix_4x4d_t is array (1 .. 16) of aliased OpenGL.Types.Double_t;")
+
+    (para "The " (item ada_type "Matrix_4x4d_t") " type specifies
+      a 4x4 matrix of double-precision floating point values. The matrix
+      is aligned on a 16-byte boundary to allow easy processing by
+      external vector hardware."))
 )

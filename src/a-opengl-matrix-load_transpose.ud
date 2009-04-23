@@ -1,0 +1,24 @@
+(section
+  (ref "opengl_matrix_load_transpose")
+  (title "OpenGL.Matrix.Load_Transpose")
+  (para procedure_desc "Load transposition of matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+
+procedure Load_Transpose (Matrix : in Matrix_4x4f_t);
+
+procedure Load_Transpose (Matrix : in Matrix_4x4d_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Load_Transpose") " procedures load
+      the transposition of " (item parameter "Matrix") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Load_Transpose") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glLoadTransposeMatrix.xml"
+      "glLoadTransposeMatrix") ".")))

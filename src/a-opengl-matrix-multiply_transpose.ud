@@ -1,0 +1,24 @@
+(section
+  (ref "opengl_matrix_multiply_transpose")
+  (title "OpenGL.Matrix.Multiply_Transpose")
+  (para procedure_desc "Multiply transposition of matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+
+procedure Multiply_Transpose (Matrix : in Matrix_4x4f_t);
+
+procedure Multiply_Transpose (Matrix : in Matrix_4x4d_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Multiply_Transpose") " procedures multiply
+      the transposition of " (item parameter "Matrix") " with the current matrix."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Multiply_Transpose") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glMultTransposeMatrix.xml"
+      "glMultTransposeMatrix") ".")))

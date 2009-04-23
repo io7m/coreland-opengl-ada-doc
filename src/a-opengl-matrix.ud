@@ -7,4 +7,8 @@
 
   (include "a-opengl-matrix-types.ud")
   (include "a-opengl-matrix-mode.ud")
+  (include "a-opengl-matrix-load.ud")
+  (include "a-opengl-matrix-multiply.ud")
+  (include "a-opengl-matrix-load_transpose.ud")
+  (include "a-opengl-matrix-multiply_transpose.ud")
 )

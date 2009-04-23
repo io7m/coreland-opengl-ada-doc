@@ -1,0 +1,23 @@
+(section
+  (ref "opengl_matrix_load")
+  (title "OpenGL.Matrix.Load")
+  (para procedure_desc "Load matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+
+procedure Load (Matrix : in Matrix_4x4f_t);
+
+procedure Load (Matrix : in Matrix_4x4d_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Load") " procedures load 4x4 matrices."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Load") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glLoadMatrix.xml"
+      "glLoadMatrix") ".")))

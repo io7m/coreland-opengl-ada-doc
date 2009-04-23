@@ -1,0 +1,24 @@
+(section
+  (ref "opengl_matrix_multiply")
+  (title "OpenGL.Matrix.Multiply")
+  (para procedure_desc "Multiply matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+
+procedure Multiply (Matrix : in Matrix_4x4f_t);
+
+procedure Multiply (Matrix : in Matrix_4x4d_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Multiply") " procedures multiply "
+      (item parameter "Matrix") " with the current matrix."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Multiply") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glMultMatrix.xml"
+      "glMultMatrix") ".")))
