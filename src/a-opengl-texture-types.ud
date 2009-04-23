@@ -2,6 +2,12 @@
   (title "Types")
 
   (subsection
+    (title "Index_t")
+    (para-verbatim ada_type_synopsis
+"type Index_t is range implementation-defined;")
+    (para "The " (item ada_type "Index_t") " type specifies a texture index."))
+
+  (subsection
     (title "Border_Width_t")
     (para-verbatim ada_type_synopsis
 "type Border_Width_t is range 0 .. 1;")

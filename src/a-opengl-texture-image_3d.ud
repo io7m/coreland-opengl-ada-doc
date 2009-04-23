@@ -9,6 +9,11 @@
 
 type Target_3D_t is (Texture_3D, Proxy_Texture_3D, Texture_Rectangle_ARB);
 
+generic
+  type Data_Element_t is private;
+  type Data_Index_t   is range <>;
+  type Data_Array_t   is array (Data_Index_t range <>) of aliased Data_Element_t;
+
 procedure Image_3D
   (Target          : in Target_3D_t;
    Level           : in Natural;
