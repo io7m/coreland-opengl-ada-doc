@@ -1,0 +1,31 @@
+(section
+  (title "OpenGL.Thin")
+  (ref "opengl_thin")
+
+  (para "The " (item ada_package "OpenGL.Thin") " package provides direct
+    access to the original C API.")
+
+  (para "Please consult " (item file_name "opengl-thin.ads") " for the
+    specification of types and subprograms.")
+
+  (subsection
+    (title "Names")
+
+    (para "Original API function names are transformed into Ada-friendly
+      versions with the following procedures, in order:")
+
+    (list
+      (item "Remove \"gl\" prefix.")
+      (item "For each uppercase or numeric character in the name, prefix the
+        character with an underscore, unless the character is the first
+        character in the name.")
+      (item "If the resulting name is not a valid Ada name, prefix
+        with \"GL_\"."))
+
+    (para-verbatim example
+"glVertexAttrib -> VertexAttrib -> Vertex_Attrib
+glBegin        -> Begin        -> GL_Begin
+glEnd          -> End          -> GL_End
+glVertex3f     -> glVertex3f   -> Vertex_3f
+"))
+)

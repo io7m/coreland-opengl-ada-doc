@@ -10,10 +10,23 @@
   (subsection
     (title "Design")
 
-    (para "The package attempts to keep abstractions to a bare
-      minimum to keep the API as much like the original as
-      possible. It does, however, split the API up into packages
-      and provide more strongly typed versions of functions/procedures
-      where possible."))
+    (para "The package splits the " (item package "OpenGL") " API
+      into several Ada packages, providing strongly typed versions
+      of of the original C functions.")
+
+    (para "The package also provides direct access to the original "
+      (item package "OpenGL") " functions via the "
+      (link "opengl_thin" "OpenGL.Thin") " package."))
+
+  (subsection
+    (title "Documentation")
+
+    (para "This documentation should be considered supplementary
+      to the " (link-ext "http://www.opengl.org/documentation/"
+      "OpenGL documentation and specifications") ". The user is
+      expected to have knowledge of the " (item package "OpenGL") " API.
+      This documentation makes no attempt to describe the original API
+      and only documents the new Ada subprograms and their relation to
+      the original C functions."))
 
 ) ; end of section

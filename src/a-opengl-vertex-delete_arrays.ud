@@ -1,0 +1,24 @@
+(section
+  (ref "opengl_vertex_Delete_Arrays")
+  (title "OpenGL.Vertex.Delete_Arrays")
+  (para procedure_desc "Delete array names.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Vertex;
+
+procedure Delete_Arrays
+  (Arrays : in Array_Index_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Delete_Arrays") " procedure
+      deletes " (item parameter "Arrays") "'" (item ada_attribute "Length")
+      " vertex array names."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Delete_Arrays") " subprogram is
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glGenVertexArrays.xml" "glGenVertexArrays") ".")))

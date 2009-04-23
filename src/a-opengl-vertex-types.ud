@@ -18,4 +18,25 @@
 
     (para "The " (item ada_type "Attribute_Count_t") " is used to
       select a number of elements of a generic attribute array."))
+
+  (subsection
+    (title "Array_Index_t")
+
+    (para-verbatim ada_type_synopsis
+"type Array_Index_t is range 0 .. implementation-defined;")
+
+    (para "The " (item ada_type "Array_Index_t") " is used to
+      refer to vertex arrays. This type refers to the actual
+      array as opposed to one of it's elements."))
+
+  (subsection
+    (title "Array_Index_Array_t")
+
+    (para-verbatim ada_type_synopsis
+"type Array_Index_Array_t is array (Natural range <>) of aliased Array_Index_t;")
+
+    (para "The " (item ada_type "Array_Index_Array_t") " is an
+      array of " (item ada_type "Array_Index_t") ". It is used,
+      for example, to collect vertex arrays into a single list for
+      rendering."))
 )

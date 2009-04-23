@@ -1,0 +1,23 @@
+(section
+  (ref "opengl_vertex_bind_array")
+  (title "OpenGL.Vertex.Bind_Array")
+  (para procedure_desc "Bind vertex array.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Vertex;
+
+procedure Bind_Array
+  (Index : in Array_Index_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Bind_Array") " procedure
+      binds the vertex array " (item parameter "Index") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Bind_Array") " subprogram is
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glEnableVertexAttribArray.xml" "glEnableVertexAttribArray") ".")))
