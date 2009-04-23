@@ -1,0 +1,31 @@
+(section
+  (ref "opengl_matrix_translate")
+  (title "OpenGL.Matrix.Translate")
+  (para procedure_desc "Translate matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+with OpenGL.Types;
+
+procedure Translate
+  (X : in OpenGL.Types.Float_t;
+   Y : in OpenGL.Types.Float_t;
+   Z : in OpenGL.Types.Float_t);
+
+procedure Translate
+  (X : in OpenGL.Types.Double_t;
+   Y : in OpenGL.Types.Double_t;
+   Z : in OpenGL.Types.Double_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Translate") " procedures multiply the current
+      matrix by a general translation matrix."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Translate") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glTranslate.xml"
+      "glTranslate") ".")))

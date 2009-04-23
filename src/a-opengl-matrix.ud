@@ -11,4 +11,7 @@
   (include "a-opengl-matrix-multiply.ud")
   (include "a-opengl-matrix-load_transpose.ud")
   (include "a-opengl-matrix-multiply_transpose.ud")
+  (include "a-opengl-matrix-scale.ud")
+  (include "a-opengl-matrix-translate.ud")
+  (include "a-opengl-matrix-rotate.ud")
 )

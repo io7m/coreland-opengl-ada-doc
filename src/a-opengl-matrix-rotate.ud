@@ -1,0 +1,33 @@
+(section
+  (ref "opengl_matrix_rotate")
+  (title "OpenGL.Matrix.Rotate")
+  (para procedure_desc "Rotate matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+with OpenGL.Types;
+
+procedure Rotate
+  (Angle : in OpenGL.Types.Float_t;
+   X     : in OpenGL.Types.Float_t;
+   Y     : in OpenGL.Types.Float_t;
+   Z     : in OpenGL.Types.Float_t);
+
+procedure Rotate
+  (Angle : in OpenGL.Types.Double_t;
+   X     : in OpenGL.Types.Double_t;
+   Y     : in OpenGL.Types.Double_t;
+   Z     : in OpenGL.Types.Double_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Rotate") " procedures multiply the current
+      matrix by a general rotation matrix."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Rotate") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glRotate.xml"
+      "glRotate") ".")))
