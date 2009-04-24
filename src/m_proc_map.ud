@@ -44,6 +44,8 @@
 (t-row (item "glTexImage1D")(item (link "opengl_texture_image_1d" "OpenGL.Texture.Image_1D")))
 (t-row (item "glTexImage2D")(item (link "opengl_texture_image_2d" "OpenGL.Texture.Image_2D")))
 (t-row (item "glTexImage3D")(item (link "opengl_texture_image_3d" "OpenGL.Texture.Image_3D")))
+(t-row (item "glTexParameterf")(item (link "opengl_texture_parameter" "OpenGL.Texture.Parameter")))
+(t-row (item "glTexParameteri")(item (link "opengl_texture_parameter" "OpenGL.Texture.Parameter")))
 (t-row (item "glTranslated")(item (link "opengl_matrix_translate" "OpenGL.Matrix.Translate")))
 (t-row (item "glTranslatef")(item (link "opengl_matrix_translate" "OpenGL.Matrix.Translate")))
 (t-row (item "glUnmapBuffer")(item (link "opengl_buffer_unmap" "OpenGL.Buffer.Unmap")))

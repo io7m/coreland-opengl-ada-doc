@@ -18,7 +18,7 @@ procedure Pixel_Store
   (subsection
     (title "Description")
     (para
-      "The " (item ada_procedure "Pixel_Store") " specifies storage properties
+      "The " (item ada_procedure "Pixel_Store") " procedures specify storage properties
       of pixel and texture data."))
   (subsection
     (title "Mapping")

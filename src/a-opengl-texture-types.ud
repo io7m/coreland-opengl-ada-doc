@@ -147,4 +147,25 @@
     (para "The " (item ada_type "Storage_Parameter_t") " type is an
       enumeration type specifying various pixel and texture data
       storage parameters."))
+
+  (subsection
+    (title "Texture_Parameter_t")
+    (para-verbatim ada_type_synopsis
+"type Texture_Parameter_t is
+ (Texture_Min_Filter,
+  Texture_Mag_Filter,
+  Texture_Min_LOD,
+  Texture_Max_LOD,
+  Texture_Base_Level,
+  Texture_Max_Level,
+  Texture_Wrap_S,
+  Texture_Wrap_T,
+  Texture_Wrap_R,
+  Texture_Priority,
+  Texture_Compare_Mode,
+  Texture_Compare_Func,
+  Depth_Texture_Mode,
+  Generate_Mipmap);")
+    (para "The " (item ada_type "Texture_Parameter_t") " type is an
+      enumeration type specifying various texture parameters."))
 )
