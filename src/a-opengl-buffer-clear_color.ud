@@ -17,7 +17,8 @@ procedure Clear_Color
     (title "Description")
     (para
       "The " (item ada_procedure "Clear_Color") " procedure
-      clears the buffers specified by " (item parameter "Mask") "."))
+      sets the color values to use when clearing the color buffer
+      with " (link "opengl_buffer_clear" "Clear") "."))
   (subsection
     (title "Mapping")
     (para
