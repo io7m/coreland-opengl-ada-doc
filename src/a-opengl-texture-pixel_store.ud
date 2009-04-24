@@ -1,0 +1,28 @@
+(section
+  (ref "opengl_texture_pixel_store")
+  (title "OpenGL.Texture.Pixel_Store")
+  (para procedure_desc "Specify pixel data storage properties.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Texture;
+
+procedure Pixel_Store
+  (Parameter : in Storage_Parameter_t;
+   Value     : in Standard.Integer);
+
+procedure Pixel_Store
+  (Parameter : in Storage_Parameter_t;
+   Value     : in Standard.Float);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Pixel_Store") " specifies storage properties
+      of pixel and texture data."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Pixel_Store") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glPixelStore.xml"
+      "glPixelStore") ".")))

@@ -9,4 +9,5 @@
   (include "a-opengl-texture-image_1d.ud")
   (include "a-opengl-texture-image_2d.ud")
   (include "a-opengl-texture-image_3d.ud")
+  (include "a-opengl-texture-pixel_store.ud")
 )

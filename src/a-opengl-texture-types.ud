@@ -98,29 +98,53 @@
   (subsection
     (title "Data_Type_t")
     (para-verbatim ada_type_synopsis
-"  type Data_Type_t is
-   (Unsigned_Byte,
-    Byte,
-    Bitmap,
-    Unsigned_Short,
-    Short,
-    Unsigned_Integer,
-    Integer,
-    Float,
-    Unsigned_Byte_3_3_2,
-    Unsigned_Byte_2_3_3_Rev,
-    Unsigned_Short_5_6_5,
-    Unsigned_Short_5_6_5_Rev,
-    Unsigned_Short_4_4_4_4,
-    Unsigned_Short_4_4_4_4_Rev,
-    Unsigned_Short_5_5_5_1,
-    Unsigned_Short_1_5_5_5_Rev,
-    Unsigned_Integer_8_8_8_8,
-    Unsigned_Integer_8_8_8_8_Rev,
-    Unsigned_Integer_10_10_10_2,
-    Unsigned_Integer_2_10_10_10_Rev);")
+"type Data_Type_t is
+ (Unsigned_Byte,
+  Byte,
+  Bitmap,
+  Unsigned_Short,
+  Short,
+  Unsigned_Integer,
+  Integer,
+  Float,
+  Unsigned_Byte_3_3_2,
+  Unsigned_Byte_2_3_3_Rev,
+  Unsigned_Short_5_6_5,
+  Unsigned_Short_5_6_5_Rev,
+  Unsigned_Short_4_4_4_4,
+  Unsigned_Short_4_4_4_4_Rev,
+  Unsigned_Short_5_5_5_1,
+  Unsigned_Short_1_5_5_5_Rev,
+  Unsigned_Integer_8_8_8_8,
+  Unsigned_Integer_8_8_8_8_Rev,
+  Unsigned_Integer_10_10_10_2,
+  Unsigned_Integer_2_10_10_10_Rev);")
 
     (para "The " (item ada_type "Data_Type_t") " type is an enumeration
       type specifying the data type of individual elements of pixel data."))
 
+  (subsection
+    (title "Storage_Parameter_t")
+    (para-verbatim ada_type_synopsis
+"type Storage_Parameter_t is
+ (Pack_Swap_Bytes,
+  Pack_LSB_First,
+  Pack_Row_Length,
+  Pack_Image_Height,
+  Pack_Skip_Pixels,
+  Pack_Skip_Rows,
+  Pack_Skip_Images,
+  Pack_Alignment,
+  Unpack_Swap_Bytes,
+  Unpack_LSB_First,
+  Unpack_Row_Length,
+  Unpack_Image_Height,
+  Unpack_Skip_Pixels,
+  Unpack_Skip_Rows,
+  Unpack_Skip_Images,
+  Unpack_Alignment);")
+
+    (para "The " (item ada_type "Storage_Parameter_t") " type is an
+      enumeration type specifying various pixel and texture data
+      storage parameters."))
 )

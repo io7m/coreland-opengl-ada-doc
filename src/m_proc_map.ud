@@ -33,6 +33,8 @@
 (t-row (item "glMultTransposeMatrixd")(item (link "opengl_matrix_multiply_transpose" "OpenGL.Matrix.Multiply_Transpose")))
 (t-row (item "glMultTransposeMatrixf")(item (link "opengl_matrix_multiply_transpose" "OpenGL.Matrix.Multiply_Transpose")))
 (t-row (item "glOrtho")(item (link "opengl_matrix_ortho" "OpenGL.Matrix.Ortho")))
+(t-row (item "glPixelStoref")(item (link "opengl_texture_pixel_store" "OpenGL.Texture.Pixel_Store")))
+(t-row (item "glPixelStorei")(item (link "opengl_texture_pixel_store" "OpenGL.Texture.Pixel_Store")))
 (t-row (item "glPopMatrix")(item (link "opengl_matrix_pop" "OpenGL.Matrix.Pop")))
 (t-row (item "glPushMatrix")(item (link "opengl_matrix_push" "OpenGL.Matrix.Push")))
 (t-row (item "glRotated")(item (link "opengl_matrix_rotate" "OpenGL.Matrix.Rotate")))
