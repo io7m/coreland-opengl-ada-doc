@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_buffer_map_range")
-  (title "OpenGL.Buffer.Map_Range")
+  (ref "opengl_buffer_object_map_range")
+  (title "OpenGL.Buffer_Object.Map_Range")
   (para procedure_desc "Map range of buffer object data store to address space.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Buffer;
+"with OpenGL.Buffer_Object;
 
 Read_Bit              : constant Access_Policy_t;
 Write_Bit             : constant Access_Policy_t;
@@ -32,16 +32,16 @@ function Map_Range
       mapped memory will be used. The function returns the address of
       the mapped memory. The address is intended to be used as an overlay:")
     (para-verbatim example
-"function Map_Range is new OpenGL.Buffer.Map_Range
+"function Map_Range is new OpenGL.Buffer_Object.Map_Range
   (Element_Type => Float,
    Index_Type   => Natural);
 
 Mapped : array (1 .. 10) of Float;
 for Mapped'Address use Map_Range
-  (Target        => OpenGL.Buffer.Array_Buffer,
+  (Target        => OpenGL.Buffer_Object.Array_Buffer,
    Offset        => 0,
    Length        => 10,
-   Access_Policy => OpenGL.Buffer.Read_Bit or OpenGL.Buffer.Write_Bit);")
+   Access_Policy => OpenGL.Buffer_Object.Read_Bit or OpenGL.Buffer_Object.Write_Bit);")
     (para
       "Please consult the "
       (link-ext "http://www.opengl.org/documentation/specs/"

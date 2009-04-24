@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_buffer_flush_range")
-  (title "OpenGL.Buffer.Flush_Range")
+  (ref "opengl_buffer_object_flush_range")
+  (title "OpenGL.Buffer_Object.Flush_Range")
   (para procedure_desc "Flush range of buffer object's data store.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Buffer;
+"with OpenGL.Buffer_Object;
 
 procedure Flush_Range
   (Target : in Target_t;

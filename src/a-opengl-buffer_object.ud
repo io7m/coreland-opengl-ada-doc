@@ -1,0 +1,19 @@
+(section
+  (title "OpenGL.Buffer_Object")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Buffer_Object") " package is
+    a generic package providing access to high performance server
+    memory buffers.")
+
+  (include "a-opengl-buffer_object-types.ud")
+  (include "a-opengl-buffer_object-generate.ud")
+  (include "a-opengl-buffer_object-delete.ud")
+  (include "a-opengl-buffer_object-bind.ud")
+  (include "a-opengl-buffer_object-data.ud")
+  (include "a-opengl-buffer_object-sub_data.ud")
+  (include "a-opengl-buffer_object-map_range.ud")
+  (include "a-opengl-buffer_object-map.ud")
+  (include "a-opengl-buffer_object-unmap.ud")
+  (include "a-opengl-buffer_object-flush_range.ud")
+)

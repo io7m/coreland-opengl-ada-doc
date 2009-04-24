@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_buffer_sub_data")
-  (title "OpenGL.Buffer.Sub_Data")
+  (ref "opengl_buffer_object_sub_data")
+  (title "OpenGL.Buffer_Object.Sub_Data")
   (para procedure_desc "Modify data store for buffer object.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Buffer;
+"with OpenGL.Buffer_Object;
 
 procedure Sub_Data
   (Target : in Target_t;

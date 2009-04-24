@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_buffer_unmap")
-  (title "OpenGL.Buffer.Unmap")
+  (ref "opengl_buffer_object_unmap")
+  (title "OpenGL.Buffer_Object.Unmap")
   (para function_desc "Unmap data store of buffer object.")
   (subsection
     (title "Synopsis")
     (para-verbatim function_synopsis
-"with OpenGL.Buffer;
+"with OpenGL.Buffer_Object;
 
 function Unmap (Target : in Target_t) return Boolean;
 "))

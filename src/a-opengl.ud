@@ -9,7 +9,7 @@
       and the original C API.")
     (include "m_proc_map.ud"))
 
-  (include "a-opengl-buffer.ud")
+  (include "a-opengl-buffer_object.ud")
   (include "a-opengl-error.ud")
   (include "a-opengl-light.ud")
   (include "a-opengl-matrix.ud")

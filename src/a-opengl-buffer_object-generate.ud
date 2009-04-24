@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_buffer_generate")
-  (title "OpenGL.Buffer.Generate")
+  (ref "opengl_buffer_object_generate")
+  (title "OpenGL.Buffer_Object.Generate")
   (para procedure_desc "Generate buffer object names.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Buffer;
+"with OpenGL.Buffer_Object;
 
 procedure Generate (Buffers : in out Buffer_Array_t);
 "))

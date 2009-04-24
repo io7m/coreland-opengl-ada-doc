@@ -1,6 +1,6 @@
 (section
-  (ref "opengl_buffer_data")
-  (title "OpenGL.Buffer.Data")
+  (ref "opengl_buffer_object_data")
+  (title "OpenGL.Buffer_Object.Data")
   (para procedure_desc "Create data store for buffer object.")
   (subsection
     (title "Synopsis")

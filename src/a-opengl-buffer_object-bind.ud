@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_buffer_bind")
-  (title "OpenGL.Buffer.Bind")
+  (ref "opengl_buffer_object_bind")
+  (title "OpenGL.Buffer_Object.Bind")
   (para procedure_desc "Bind buffer object to target.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Buffer;
+"with OpenGL.Buffer_Object;
 
 procedure Bind
   (Target : in Target_t;
