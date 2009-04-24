@@ -1,0 +1,25 @@
+(section
+  (ref "opengl_texture_bind")
+  (title "OpenGL.Texture.Bind")
+  (para procedure_desc "Bind texture object name.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Texture;
+
+procedure Bind
+  (Target  : in Target_t;
+   Texture : in Index_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Bind") " procedure
+       binds the texture named " (item parameter "Texture")
+     " to the texturing target " (item parameter "Target") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Bind") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glBindTexture.xml"
+      "glBindTexture") ".")))

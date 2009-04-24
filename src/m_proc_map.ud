@@ -1,6 +1,7 @@
 (table procedure_map
   (t-row (item "OpenGL C API") (item "Ada equivalent"))
 (t-row (item "glBindBuffer")(item (link "opengl_buffer_object_bind" "OpenGL.Buffer_Object.Bind")))
+(t-row (item "glBindTexture")(item (link "opengl_texture_bind" "OpenGL.Texture.Bind")))
 (t-row (item "glBindVertexArray")(item (link "opengl_vertex_bind_array" "OpenGL.Vertex.Bind_Array")))
 (t-row (item "glBufferData")(item (link "opengl_buffer_object_data" "OpenGL.Buffer_Object.Data")))
 (t-row (item "glBufferSubData")(item (link "opengl_buffer_object_sub_data" "OpenGL.Buffer_Object.Sub_Data")))
