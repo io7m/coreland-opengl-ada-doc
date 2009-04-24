@@ -7,4 +7,5 @@
     color buffer, etc).")
 
   (include "a-opengl-buffer-clear.ud")
+  (include "a-opengl-buffer-clear_color.ud")
 )

@@ -5,6 +5,7 @@
 (t-row (item "glBufferData")(item (link "opengl_buffer_object_data" "OpenGL.Buffer_Object.Data")))
 (t-row (item "glBufferSubData")(item (link "opengl_buffer_object_sub_data" "OpenGL.Buffer_Object.Sub_Data")))
 (t-row (item "glClear")(item (link "opengl_buffer_clear" "OpenGL.Buffer.Clear")))
+(t-row (item "glClearColor")(item (link "opengl_buffer_clear_color" "OpenGL.Buffer.Clear_Color")))
 (t-row (item "glDeleteBuffers")(item (link "opengl_buffer_object_delete" "OpenGL.Buffer_Object.Delete")))
 (t-row (item "glDeleteVertexArrays")(item (link "opengl_vertex_delete_arrays" "OpenGL.Vertex.Delete_Arrays")))
 (t-row (item "glDepthRange")(item (link "opengl_view_depth_range" "OpenGL.View.Depth_Range")))
