@@ -24,6 +24,5 @@ procedure Clear (Mask : in Buffer_Mask_t);
   (subsection
     (title "Mapping")
     (para
-      "The " (item ada_subprogram "Clear") " subprogram is roughly
-      equivalent to "
+      "The " (item ada_subprogram "Clear") " subprogram is equivalent to "
       (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glClear.xml" "glClear") ".")))
