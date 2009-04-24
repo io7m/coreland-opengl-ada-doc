@@ -1,0 +1,22 @@
+(section
+  (ref "opengl_matrix_load_identity")
+  (title "OpenGL.Matrix.Load_Identity")
+  (para procedure_desc "Load identity matrix.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Matrix;
+
+procedure Load_Identity;
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Load_Identity") " procedure
+       loads the identity matrix for the current matrix mode."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Load_Identity") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glLoadIdentity.xml"
+      "glLoadIdentity") ".")))

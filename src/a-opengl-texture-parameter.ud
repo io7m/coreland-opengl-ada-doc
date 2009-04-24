@@ -1,0 +1,35 @@
+(section
+  (ref "opengl_texture_parameter")
+  (title "OpenGL.Texture.Parameter")
+  (para procedure_desc "Specify texture parameters.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Texture;
+
+type Parameter_Target_t is
+  (Texture_1D,
+   Texture_2D,
+   Texture_3D,
+   Texture_Cube_Map);
+
+procedure Parameter
+  (Target    : in Parameter_Target_t;
+   Parameter : in Texture_Parameter_t;
+   Value     : in Standard.Integer);
+
+procedure Parameter
+  (Target    : in Parameter_Target_t;
+   Parameter : in Texture_Parameter_t;
+   Value     : in Standard.Float);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Parameter") " procedures specify texture parameters."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Parameter") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glTexParameter.xml"
+      "glTexParameter") ".")))

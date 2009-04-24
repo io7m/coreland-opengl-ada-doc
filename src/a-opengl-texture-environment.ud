@@ -1,0 +1,74 @@
+(section
+  (ref "opengl_texture_environment")
+  (title "OpenGL.Texture.Environment")
+  (para procedure_desc "Set texture environment parameters.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Texture;
+
+type Environment_Target_t is
+  (Texture_Environment,
+   Texture_Filter_Control,
+   Point_Sprite);
+
+type Environment_Parameter_t is
+ (Texture_Env_Mode,
+  Texture_LOD_Bias,
+  Combine_RGB,
+  Combine_Alpha,
+  Source0_RGB,
+  Source1_RGB,
+  Source2_RGB,
+  Source0_Alpha,
+  Source1_Alpha,
+  Source2_Alpha,
+  Operand0_RGB,
+  Operand1_RGB,
+  Operand2_RGB,
+  Operand0_Alpha,
+  Operand1_Alpha,
+  Operand2_Alpha,
+  RGB_Scale,
+  Alpha_Scale,
+  Coord_Replace);
+
+Add                    : constant := Thin.GL_ADD;
+Add_Signed             : constant := Thin.GL_ADD_SIGNED;
+Interpolate            : constant := Thin.GL_INTERPOLATE;
+Modulate               : constant := Thin.GL_MODULATE;
+Decal                  : constant := Thin.GL_DECAL;
+Blend                  : constant := Thin.GL_BLEND;
+Replace                : constant := Thin.GL_REPLACE;
+Subtract               : constant := Thin.GL_SUBTRACT;
+Combine                : constant := Thin.GL_COMBINE;
+Texture                : constant := Thin.GL_TEXTURE;
+GL_Constant            : constant := Thin.GL_CONSTANT;
+Primary_Color          : constant := Thin.GL_PRIMARY_COLOR;
+Previous               : constant := Thin.GL_PREVIOUS;
+Source_Color           : constant := Thin.GL_SRC_COLOR;
+One_Minus_Source_Color : constant := Thin.GL_ONE_MINUS_SRC_COLOR;
+Source_Alpha           : constant := Thin.GL_SRC_ALPHA;
+One_Minus_Source_Alpha : constant := Thin.GL_ONE_MINUS_SRC_ALPHA;
+
+procedure Environment
+  (Target    : in Environment_Target_t;
+   Parameter : in Environment_Parameter_t;
+   Value     : in Standard.Integer);
+
+procedure Environment
+  (Target    : in Environment_Target_t;
+   Parameter : in Environment_Parameter_t;
+   Value     : in Standard.Float);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Environment") " procedures specify texture
+      environment parameters."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Environment") " subprograms are equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glTexEnv.xml"
+      "glTexEnv") ".")))

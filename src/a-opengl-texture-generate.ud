@@ -1,0 +1,24 @@
+(section
+  (ref "opengl_texture_generate")
+  (title "OpenGL.Texture.Generate")
+  (para procedure_desc "Generate texture object names.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Texture;
+
+procedure Generate (Textures : in out Index_Array_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Generate") " procedure
+       generates and returns " (item parameter "Textures")
+      "'" (item ada_attribute "Length") " texture names in "
+      (item parameter "Textures") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Generate") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glGenTextures.xml"
+      "glGenTextures") ".")))

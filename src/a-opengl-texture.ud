@@ -6,9 +6,11 @@
     access to " (item package "OpenGL") " textures.")
 
   (include "a-opengl-texture-types.ud")
+  (include "a-opengl-texture-generate.ud")
   (include "a-opengl-texture-image_1d.ud")
   (include "a-opengl-texture-image_2d.ud")
   (include "a-opengl-texture-image_3d.ud")
   (include "a-opengl-texture-pixel_store.ud")
+  (include "a-opengl-texture-environment.ud")
   (include "a-opengl-texture-parameter.ud")
 )
