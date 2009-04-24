@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_state_clear")
-  (title "OpenGL.State.Clear")
+  (ref "opengl_buffer_clear")
+  (title "OpenGL.Buffer.Clear")
   (para procedure_desc "Clear buffer(s).")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.State;
+"with OpenGL.Buffer;
 
 type Buffer_Mask_t is new Thin.Bitfield_t;
 

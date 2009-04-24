@@ -1,0 +1,10 @@
+(section
+  (title "OpenGL.Buffer")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Buffer") " package provides
+    subprograms to manipulate GL buffers (such as the depth buffer,
+    color buffer, etc).")
+
+  (include "a-opengl-buffer-clear.ud")
+)
