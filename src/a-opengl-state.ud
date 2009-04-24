@@ -9,4 +9,5 @@
   (include "a-opengl-state-enable.ud")
   (include "a-opengl-state-disable.ud")
   (include "a-opengl-state-is_enabled.ud")
+  (include "a-opengl-state-clear.ud")
 )

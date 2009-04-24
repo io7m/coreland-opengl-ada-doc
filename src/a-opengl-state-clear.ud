@@ -1,0 +1,29 @@
+(section
+  (ref "opengl_state_clear")
+  (title "OpenGL.State.Clear")
+  (para procedure_desc "Clear buffer(s).")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.State;
+
+type Buffer_Mask_t is new Thin.Bitfield_t;
+
+Color_Buffer        : constant Buffer_Mask_t := Thin.GL_COLOR_BUFFER_BIT;
+Depth_Buffer        : constant Buffer_Mask_t := Thin.GL_DEPTH_BUFFER_BIT;
+Accumulation_Buffer : constant Buffer_Mask_t := Thin.GL_ACCUM_BUFFER_BIT;
+Stencil_Buffer      : constant Buffer_Mask_t := Thin.GL_STENCIL_BUFFER_BIT;
+
+procedure Clear (Mask : in Buffer_Mask_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Clear") " procedure
+      clears the buffers specified by " (item parameter "Mask") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Clear") " subprogram is roughly
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glClear.xml" "glClear") ".")))
