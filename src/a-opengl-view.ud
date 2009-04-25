@@ -1,6 +1,7 @@
 (section
   (title "OpenGL.View")
   (ref "opengl_view")
+  (contents)
 
   (para "The " (item ada_package "OpenGL.View") " package provides
     access to viewport handling.")
