@@ -82,4 +82,19 @@
     specify a capability of the graphics library to be
     enabled, disabled or queried."))
 
+  (subsection
+    (title "Client_Capability_t")
+    (para-verbatim ada_type_synopsis
+"type Client_Capability_t is
+ (Color_Array,
+  Edge_Flag_Array,
+  Fog_Coord_Array,
+  Index_Array,
+  Normal_Array,
+  Secondary_Color_Array,
+  Texture_Coord_Array,
+  Vertex_Array);")
+    (para "The " (item ada_type "Client_Capability_t") " is used to
+     specify a client-side capability of the graphics library to be
+     enabled or disabled."))
 )

@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_vertex_generate_arrays")
-  (title "OpenGL.Vertex.Generate_Arrays")
+  (ref "opengl_vertex_array_generate_arrays")
+  (title "OpenGL.Vertex_Array.Generate_Arrays")
   (para procedure_desc "Generate array names.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Vertex;
+"with OpenGL.Vertex_Array;
 
 procedure Generate_Arrays
   (Arrays : in out Array_Index_Array_t);

@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_vertex_bind_array")
-  (title "OpenGL.Vertex.Bind_Array")
+  (ref "opengl_vertex_array_bind_array")
+  (title "OpenGL.Vertex_Array.Bind_Array")
   (para procedure_desc "Bind vertex array.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Vertex;
+"with OpenGL.Vertex_Array;
 
 procedure Bind_Array
   (Index : in Array_Index_t);

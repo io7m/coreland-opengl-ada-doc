@@ -1,0 +1,17 @@
+(section
+  (title "OpenGL.Vertex_Array")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Vertex_Array") " package provides
+    subprograms to manipulate vertex arrays.")
+
+  (include "a-opengl-vertex_array-types.ud")
+  (include "a-opengl-vertex_array-generate_arrays.ud")
+  (include "a-opengl-vertex_array-delete_arrays.ud")
+  (include "a-opengl-vertex_array-enable_attribute_array.ud")
+  (include "a-opengl-vertex_array-disable_attribute_array.ud")
+  (include "a-opengl-vertex_array-bind_array.ud")
+  (include "a-opengl-vertex_array-draw_arrays.ud")
+  (include "a-opengl-vertex_array-pointer_integer.ud")
+  (include "a-opengl-vertex_array-pointer_float.ud")
+)

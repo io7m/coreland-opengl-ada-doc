@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_vertex_enable_attribute_array")
-  (title "OpenGL.Vertex.Enable_Attribute_Array")
+  (ref "opengl_vertex_array_enable_attribute_array")
+  (title "OpenGL.Vertex_Array.Enable_Attribute_Array")
   (para procedure_desc "Enable a generic vertex attribute array.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Vertex;
+"with OpenGL.Vertex_Array;
 
 procedure Enable_Attribute_Array (Index : in Attribute_Index_t);
 "))

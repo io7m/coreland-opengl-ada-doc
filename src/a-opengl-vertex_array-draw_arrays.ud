@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_vertex_draw_arrays")
-  (title "OpenGL.Vertex.Draw_Arrays")
+  (ref "opengl_vertex_array_draw_arrays")
+  (title "OpenGL.Vertex_Array.Draw_Arrays")
   (para procedure_desc "Render primitives from array data.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Vertex;
+"with OpenGL.Vertex_Array;
 
 procedure Draw_Arrays
   (Mode  : in Primitive_Type_t;

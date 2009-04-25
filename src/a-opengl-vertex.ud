@@ -3,13 +3,9 @@
   (contents)
 
   (para "The " (item ada_package "OpenGL.Vertex") " package provides
-    subprograms to manipulate vertices and geometric primitives.")
+    subprograms to specify vertices and geometric primitives.")
 
   (include "a-opengl-vertex-types.ud")
-  (include "a-opengl-vertex-generate_arrays.ud")
-  (include "a-opengl-vertex-delete_arrays.ud")
-  (include "a-opengl-vertex-enable_attribute_array.ud")
-  (include "a-opengl-vertex-disable_attribute_array.ud")
-  (include "a-opengl-vertex-bind_array.ud")
-  (include "a-opengl-vertex-draw_arrays.ud")
+  (include "a-opengl-vertex-gl_begin.ud")
+  (include "a-opengl-vertex-gl_end.ud")
 )

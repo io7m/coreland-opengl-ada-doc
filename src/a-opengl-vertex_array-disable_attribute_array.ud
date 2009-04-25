@@ -1,11 +1,11 @@
 (section
-  (ref "opengl_vertex_disable_attribute_array")
-  (title "OpenGL.Vertex.Disable_Attribute_Array")
+  (ref "opengl_vertex_array_disable_attribute_array")
+  (title "OpenGL.Vertex_Array.Disable_Attribute_Array")
   (para procedure_desc "Disable a generic vertex attribute array.")
   (subsection
     (title "Synopsis")
     (para-verbatim procedure_synopsis
-"with OpenGL.Vertex;
+"with OpenGL.Vertex_Array;
 
 procedure Disable_Attribute_Array (Index : in Attribute_Index_t);
 "))

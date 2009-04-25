@@ -1,0 +1,24 @@
+(section
+  (ref "opengl_texture_blend_function")
+  (title "OpenGL.Texture.Blend_Function")
+  (para procedure_desc "Specify pixel arithmetic.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Texture;
+
+procedure Blend_Function
+  (Source_Factor : in Blend_Factor_t;
+   Target_Factor : in Blend_Factor_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Blend_Function") " procedure
+      defines the operation of blending when it is enabled."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Blend_Function") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glBlendFunc.xml"
+      "glBlendFunc") ".")))

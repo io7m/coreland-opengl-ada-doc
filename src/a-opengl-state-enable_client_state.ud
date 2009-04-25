@@ -1,0 +1,23 @@
+(section
+  (ref "opengl_state_enable_client_state")
+  (title "OpenGL.State.Enable_Client_State")
+  (para procedure_desc "Enable client-side capability.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.State;
+
+procedure Enable_Client_State (Capability : in Client_Capability_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Enable_Client_State") " procedure
+      enables the capability specified by " (item parameter "Capability") "."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Enable_Client_State") " subprogram is
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glEnableClientState.xml"
+      "glEnableClientState") ".")))

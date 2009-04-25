@@ -18,5 +18,6 @@
   (include "a-opengl-texture.ud")
   (include "a-opengl-thin.ud")
   (include "a-opengl-vertex.ud")
+  (include "a-opengl-vertex_array.ud")
   (include "a-opengl-view.ud")
 )

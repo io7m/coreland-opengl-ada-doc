@@ -1,0 +1,39 @@
+
+(section
+  (ref "opengl_vertex_array_pointer_float")
+  (title "OpenGL.Vertex_Array.Pointer_Float")
+  (para procedure_desc "Define an array of vertex data.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Vertex_Array;
+
+type Coords_Per_Vertex_t is range 2 .. 4;
+type Float_Coordinate_Type_t is (Float, Double);
+
+generic
+  Vertex_Type               : Float_Coordinate_Type_t;
+  type Vertex_Element_t     is digits <>;
+  type Vertex_Array_Index_t is range <>;
+  type Vertex_Array_t       is array (Vertex_Array_Index_t range <>) of aliased Vertex_Element_t;
+
+procedure Pointer_Float
+  (Data              : in Vertex_Array_t;
+   Coords_Per_Vertex : in Coords_Per_Vertex_t;
+   Stride            : in Natural);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Pointer_Float") " procedure
+      specifies the location and data format of an array of
+      vertex coordinates to use when rendering.")
+    (para
+      "The procedure takes an array of a generic floating point type."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Pointer_Float") " subprogram is
+      equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glVertexPointer.xml"
+      "glVertexPointer") ".")))

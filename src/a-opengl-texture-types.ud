@@ -8,6 +8,13 @@
     (para "The " (item ada_type "Index_t") " type specifies a texture index."))
 
   (subsection
+    (title "Index_Array_t")
+    (para-verbatim ada_type_synopsis
+"type Index_Array_t is array (Natural range <>) of aliased Index_t;")
+    (para "The " (item ada_type "Index_Array_t") " type specifies a
+      an array of texture indices."))
+
+  (subsection
     (title "Border_Width_t")
     (para-verbatim ada_type_synopsis
 "type Border_Width_t is range 0 .. 1;")
@@ -168,4 +175,66 @@
   Generate_Mipmap);")
     (para "The " (item ada_type "Texture_Parameter_t") " type is an
       enumeration type specifying various texture parameters."))
+
+  (subsection
+    (title "Target_t")
+    (para-verbatim ada_type_synopsis
+"type Target_t is
+  (Texture_1D,
+   Texture_2D,
+   Texture_3D,
+   Texture_Cube_Map,
+   Texture_Rectangle_ARB);")
+    (para "The " (item ada_type "Target_t") " type is an enumeration
+      type specifying texture targets."))
+
+  (subsection
+    (title "Environment_Parameter_t")
+    (para-verbatim ada_type_synopsis
+"type Environment_Parameter_t is
+ (Texture_Env_Mode,
+  Texture_LOD_Bias,
+  Combine_RGB,
+  Combine_Alpha,
+  Source0_RGB,
+  Source1_RGB,
+  Source2_RGB,
+  Source0_Alpha,
+  Source1_Alpha,
+  Source2_Alpha,
+  Operand0_RGB,
+  Operand1_RGB,
+  Operand2_RGB,
+  Operand0_Alpha,
+  Operand1_Alpha,
+  Operand2_Alpha,
+  RGB_Scale,
+  Alpha_Scale,
+  Coord_Replace);")
+    (para "The " (item ada_type "Environment_Parameter_t") " is an
+      enumeration type specifying all possible texture environment
+      parameters."))
+
+  (subsection
+    (title "Blend_Factor_t")
+    (para-verbatim ada_type_synopsis
+"type Blend_Factor_t is
+  (Blend_Constant_Alpha,
+   Blend_Constant_Color,
+   Blend_One,
+   Blend_One_Minus_Constant_Alpha,
+   Blend_One_Minus_Constant_Color,
+   Blend_One_Minus_Source_Alpha,
+   Blend_One_Minus_Source_Color,
+   Blend_One_Minus_Target_Alpha,
+   Blend_One_Minus_Target_Color,
+   Blend_Source_Alpha,
+   Blend_Source_Alpha_Saturate,
+   Blend_Source_Color,
+   Blend_Target_Alpha,
+   Blend_Target_Color,
+   Blend_Zero);")
+    (para "The " (item ada_type "Blend_Factor_t") " type is an
+      enumeration type specifying the methods the graphics
+      library uses to blend colors."))
 )
