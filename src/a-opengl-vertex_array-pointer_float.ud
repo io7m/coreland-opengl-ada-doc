@@ -29,7 +29,16 @@ procedure Pointer_Float
       specifies the location and data format of an array of
       vertex coordinates to use when rendering.")
     (para
-      "The procedure takes an array of a generic floating point type."))
+      "The procedure takes an array of a generic floating point type.")
+    (para
+      "When " (item parameter "Vertex_Type") " is set to "
+      (item constant "Float") ", " (item parameter "Vertex_Element_t")
+      " is assumed to be compatible with the standard C "
+      (item c_type "float") " type. When " (item parameter "Vertex_Type")
+      " is set to " (item constant "Double") ", "
+      (item parameter "Vertex_Element_t")
+      " is assumed to be compatible with the standard C "
+      (item c_type "double") " type."))
   (subsection
     (title "Mapping")
     (para

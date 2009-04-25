@@ -28,7 +28,16 @@ procedure Pointer_Integer
       specifies the location and data format of an array of
       vertex coordinates to use when rendering.")
     (para
-      "The procedure takes an array of a generic discrete type."))
+      "The procedure takes an array of a generic discrete type.")
+    (para
+      "When " (item parameter "Vertex_Type") " is set to "
+      (item constant "Integer") ", " (item parameter "Vertex_Element_t")
+      " is assumed to be compatible with the standard C "
+      (item c_type "int") " type. When " (item parameter "Vertex_Type")
+      " is set to " (item constant "Short") ", "
+      (item parameter "Vertex_Element_t")
+      " is assumed to be compatible with the standard C "
+      (item c_type "short") " type."))
   (subsection
     (title "Mapping")
     (para

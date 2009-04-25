@@ -12,7 +12,9 @@
 
     (para "The package splits the " (item package "OpenGL") " API
       into several Ada packages, providing strongly typed versions
-      of of the original C functions.")
+      of of the original C functions. The strongly typed versions
+      use enumeration types and floating point subtypes to prevent
+      the passing of invalid parameters to the API.")
 
     (para "The package also provides direct access to the original "
       (item package "OpenGL") " functions via the "
