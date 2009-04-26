@@ -1,0 +1,11 @@
+(section
+  (title "OpenGL.Check")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Check") " package provides
+    convenience subprograms to check the state of the graphics
+    library.")
+
+  (include "a-opengl-check-state_ok.ud")
+  (include "a-opengl-check-raise_exception.ud")
+)

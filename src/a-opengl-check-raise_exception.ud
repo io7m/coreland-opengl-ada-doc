@@ -1,0 +1,17 @@
+(section
+  (ref "opengl_check_raise_exception")
+  (title "OpenGL.Check.Raise_Exception")
+  (para procedure_desc "Raise GL exception.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Check;
+
+procedure Raise_Exception (Message : in String);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Raise_Exception") " procedure
+      raises " (item ada_exception "GL_Error") " with "
+      (item parameter "Message") ".")))

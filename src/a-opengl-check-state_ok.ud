@@ -1,0 +1,21 @@
+(section
+  (ref "opengl_check_state_ok")
+  (title "OpenGL.Check.State_OK")
+  (para procedure_desc "Check GL state.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Check;
+
+procedure State_OK (Message : in String);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "State_OK") " procedure
+      raises " (item ada_exception "GL_Error") " if the current
+      code returned by " (item ada_function "OpenGL.Error.Get_Error")
+      " is not " (item constant "No_Error") ". The exception message
+      contains a string representation of the current error code,
+      optionally prepended by " (item parameter "Message") " and a
+      colon.")))
