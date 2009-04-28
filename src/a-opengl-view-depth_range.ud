@@ -9,8 +9,8 @@
 with OpenGL.Types;
 
 procedure Depth_Range
-  (Near : in OpenGL.Types.Clamped_Long_Float_t;
-   Far  : in OpenGL.Types.Clamped_Long_Float_t);
+  (Near : in OpenGL.Types.Clamped_Double_t;
+   Far  : in OpenGL.Types.Clamped_Double_t);
 "))
   (subsection
     (title "Description")
