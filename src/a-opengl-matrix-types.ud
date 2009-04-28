@@ -14,21 +14,17 @@
     (title "Matrix_4x4f_t")
 
     (para-verbatim ada_type_synopsis
-"type Matrix_4x4f_t is array (1 .. 16) of aliased OpenGL.Types.Float_t;")
+"type Matrix_4x4f_t is OpenGL.Types.Float_Array.Real_Matrix (1 .. 4, 1 .. 4);")
 
     (para "The " (item ada_type "Matrix_4x4f_t") " type specifies
-      a 4x4 matrix of single-precision floating point values. The matrix
-      is aligned on a 16-byte boundary to allow easy processing by
-      external vector hardware."))
+      a 4x4 matrix of single-precision floating point values."))
 
   (subsection
     (title "Matrix_4x4d_t")
 
     (para-verbatim ada_type_synopsis
-"type Matrix_4x4d_t is array (1 .. 16) of aliased OpenGL.Types.Double_t;")
+"type Matrix_4x4d_t is OpenGL.Types.Double_Array.Real_Matrix (1 .. 4, 1 .. 4);")
 
     (para "The " (item ada_type "Matrix_4x4d_t") " type specifies
-      a 4x4 matrix of double-precision floating point values. The matrix
-      is aligned on a 16-byte boundary to allow easy processing by
-      external vector hardware."))
+      a 4x4 matrix of double-precision floating point values."))
 )
