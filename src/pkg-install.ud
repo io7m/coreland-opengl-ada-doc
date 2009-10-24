@@ -1,10 +1,10 @@
 (section
   (title "Install")
 
-  ; usage section
+  ; config section
 
   (subsection
-    (title "Usage")
+    (title "Configuration")
     (para
       "On installation, binaries, source files, libraries and
        headers are installed into various locations. The locations
@@ -35,13 +35,81 @@
         (t-row
           (item file_name "/usr/local/bin")
           (item file_name "conf-bindir")
-          (item "Executable directory.")))))
+          (item "Executable directory."))))
+      (para
+        "For reasons of reliability, the compilation process does not
+         read the environment or, for example, attempt to detect which
+         compiler tools should be used to compile code. The compilation
+         process reads a series of single-line configuration files which
+         specify various options. The defaults provided are acceptable
+         for most systems but users wanting customised builds will need
+         to edit the following:")
+      (subsection
+        (title "C compiler configuration")
+        (table install_config
+          (t-row
+            (item "configuration file")
+            (item "description")
+            (item "default value"))
+          (t-row
+            (item file_name "conf-cc")
+            (item "C compiler used to compile C code to object files")
+            (item command "cc"))
+          (t-row
+            (item file_name "conf-ld")
+            (item "C linker used to link C object files into executables")
+            (item command "cc"))
+          (t-row
+            (item file_name "conf-cflags")
+            (item "Optional flags passed to C compiler")
+            (item parameter "-O"))
+          (t-row
+            (item file_name "conf-ldflags")
+            (item "Optional flags passed to C linker")
+            (item parameter " "))
+          (t-row
+            (item file_name "conf-ldflags")
+            (item "Optional flags passed to C linker")
+            (item parameter " "))))
+      
+      (subsection
+        (title "Ada compiler configuration")
+        (table install_config
+          (t-row
+            (item "configuration file")
+            (item "description")
+            (item "default value"))
+          (t-row
+            (item file_name "conf-adacomp")
+            (item "Ada compiler used to compile Ada code to object files")
+            (item command "gcc"))
+          (t-row
+            (item file_name "conf-adabind")
+            (item "Ada binder used to bind Ada library files")
+            (item command "gnatbind"))
+          (t-row
+            (item file_name "conf-adalink")
+            (item "Ada linker used to produce executables")
+            (item command "gnatlink"))
+          (t-row
+            (item file_name "conf-adacflags")
+            (item "Optional flags passed to Ada compiler")
+            (item parameter "-O2 -g -fstack-check -gnatwaleF -gnatVa -gnato"))
+          (t-row
+            (item file_name "conf-adabflags")
+            (item "Optional flags passed to Ada binder")
+            (item parameter " "))
+          (t-row
+            (item file_name "conf-adaldflags")
+            (item "Optional flags passed to Ada linker")
+            (item parameter " ")))))
 
   ; compilation requirements
 
   (subsection
     (title "Requirements")
 
+    
     (para "The package requires an Ada 2005" (footnote
       (link-ext "http://adaic.org/standards/05rm/html/RM-TTL.html"))
       " compatible compiler to compile.")
@@ -50,7 +118,9 @@
     "http://www.open-std.org/jtc1/sc22/wg14/")) " compiler and a POSIX"
     (footnote (link-ext "http://www.opengroup.org/")) " environment to
       compile. The package is expected to be usable in a non-POSIX
-      environment, but is not currently tested extensively in one."))
+      environment, but is not currently tested extensively in one.")
+
+    (include "pkg-install-req.ud"))
 
   ; compilation instructions
 
