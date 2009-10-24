@@ -18,7 +18,9 @@
 
     (para "The package also provides direct access to the original "
       (item package "OpenGL") " functions via the "
-      (link "opengl_thin" "OpenGL.Thin") " package."))
+      (link "opengl_thin" "OpenGL.Thin") " package. This package is
+      generated directly from the OpenGL specifications, for
+      correctness."))
 
   (subsection
     (title "Documentation")
