@@ -1,0 +1,26 @@
+(section
+  (ref "opengl_fog_fog_mode")
+  (title "OpenGL.Fog.Fog_Mode")
+  (para procedure_desc "Set fog mode.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Fog;
+
+type Equation_t is
+  (Linear,
+   Exponential,
+   Exponential_2);
+
+procedure Fog_Mode (Equation : in Equation_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Fog_Mode") " procedure sets the fog
+      equation used."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Fog_Mode") " subprogram is equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glFog.xml" "glFog") ".")))

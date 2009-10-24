@@ -1,0 +1,15 @@
+(section
+  (title "OpenGL.Fog")
+  (contents)
+
+  (para "The " (item ada_package "OpenGL.Fog") " package provides
+    subprograms to manipulate fog.")
+
+  (include "a-opengl-fog-fog_color.ud")
+  (include "a-opengl-fog-fog_coordinate_source.ud")
+  (include "a-opengl-fog-fog_density.ud")
+  (include "a-opengl-fog-fog_end.ud")
+  (include "a-opengl-fog-fog_index.ud")
+  (include "a-opengl-fog-fog_mode.ud")
+  (include "a-opengl-fog-fog_start.ud")
+)

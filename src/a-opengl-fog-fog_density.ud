@@ -1,0 +1,26 @@
+(section
+  (ref "opengl_fog_fog_density")
+  (title "OpenGL.Fog.Fog_Density")
+  (para procedure_desc "Set fog density.")
+  (subsection
+    (title "Synopsis")
+    (para-verbatim procedure_synopsis
+"with OpenGL.Fog;
+
+type Density_Integer_t is new Types.Integer_t range 0 .. Types.Integer_t'Last;
+type Density_Float_t   is new Types.Float_t range 0.0 .. Types.Float_t'Last;
+
+procedure Fog_Density (Density : in Density_Integer_t);
+
+procedure Fog_Density (Density : in Density_Float_t);
+"))
+  (subsection
+    (title "Description")
+    (para
+      "The " (item ada_procedure "Fog_Density") " procedures set the
+      fog density used in the exponential fog equations."))
+  (subsection
+    (title "Mapping")
+    (para
+      "The " (item ada_subprogram "Fog_Density") " subprograms are equivalent to "
+      (link-ext "http://www.opengl.org/sdk/docs/man/xhtml/glFog.xml" "glFog") ".")))
