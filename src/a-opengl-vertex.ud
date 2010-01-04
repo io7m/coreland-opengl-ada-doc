@@ -8,4 +8,5 @@
   (include "a-opengl-vertex-types.ud")
   (include "a-opengl-vertex-gl_begin.ud")
   (include "a-opengl-vertex-gl_end.ud")
+  (include "a-opengl-vertex-vertex.ud")
 )
