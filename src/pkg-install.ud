@@ -13,9 +13,9 @@
     (para
       (table install_config
         (t-row
-          (item "default path")
-          (item "configuration file")
-          (item "description"))
+          (item "Default path")
+          (item "Configuration file")
+          (item "Description"))
         (t-row
           (item file_name "/usr/local/share/coreland/opengl-ada-repos")
           (item file_name "conf-repos")
@@ -35,7 +35,11 @@
         (t-row
           (item file_name "/usr/local/bin")
           (item file_name "conf-bindir")
-          (item "Executable directory."))))
+          (item "Executable directory."))
+        (t-row
+          (item file_name " ")
+          (item file_name "conf-fakeroot")
+          (item "Fake root directory (see below)."))))
       (para
         "For reasons of reliability, the compilation process does not
          read the environment or, for example, attempt to detect which
@@ -48,9 +52,9 @@
         (title "C compiler configuration")
         (table install_config
           (t-row
-            (item "configuration file")
-            (item "description")
-            (item "default value"))
+            (item "Configuration file")
+            (item "Description")
+            (item "Default value"))
           (t-row
             (item file_name "conf-cc")
             (item "C compiler used to compile C code to object files")
@@ -76,9 +80,9 @@
         (title "Ada compiler configuration")
         (table install_config
           (t-row
-            (item "configuration file")
-            (item "description")
-            (item "default value"))
+            (item "Configuration file")
+            (item "Description")
+            (item "Default value"))
           (t-row
             (item file_name "conf-adacomp")
             (item "Ada compiler used to compile Ada code to object files")
@@ -134,15 +138,96 @@ make tests")
 
     (para "The first " (item command "make") " command compiles the
     object code itself. The second command runs the test suite - any
-    errors here signal incorrect package behaviour.")
+    errors here signal incorrect package behaviour."))
 
-    (para "To install:")
+  (subsection
+    (title "Installation")
 
+    (para "A 'dry run' install can be performed that will not actually
+      install any files, to see what will be installed:")
+    (para-verbatim example
+"make install-dryrun")
+    (para "It is highly recommended that you remove previous installations
+      before installing.")
+
+    (para "The package is installed with the following commands: ")
     (para-verbatim example
 "make install
 make install-check")
-
     (para "The first " (item command "make") " command installs all
     relevant files. The second command checks that all files were
-    installed correctly."))
+    installed correctly.")
+
+    (para "The package can be uninstalled at a later date with:")
+    (para-verbatim example
+"make deinstall"))
+
+  (subsection
+    (title "Cleaning up")
+
+    (para "All object files created during the compilation process can be
+      deleted with the following command:")
+    (para-verbatim example
+"make clean")
+    (para "The distribution can be completely reset to \"distribution clean\"
+      state with the following command")
+    (para-verbatim example
+"make clean-all")
+    (para "The " (item command "clean-all") " target is necessary when, as
+      an example, the build configuration process fails due to a missing
+      external dependency. After the missing dependency is installed, the
+      compilation process will still believe it is missing until the build
+      state is reset with " (item command "clean-all") "."))
+
+  (subsection
+    (title "Fake root")
+    (para "The package can be installed into a \"fake root\" directory
+      suitable for operating system package building. Essentially, all
+      programs will believe that they have been installed into the paths
+      specified in the various configuration files but their locations
+      will actually be prefixed with the value specfied as the fake root.")
+    (para "If the " (item file_name "conf-fakeroot") " file is empty, no
+      fake root will be used."))
+
+  (subsection
+    (title "Example build with customisation")
+
+    (para-verbatim example
+"echo gcc44     > conf-cc
+echo gcc44     > conf-ld
+echo -O2 -g -W > conf-cflags
+echo gcc44     > conf-adacomp
+echo gnatlink  > conf-adalink
+echo gnatbind  > conf-adabind
+
+echo /custom/bin > conf-bindir
+echo /custom/lib/opengl-ada         > conf-dlibdir
+echo /custom/lib/opengl-ada-static  > conf-slibdir
+echo /custom/include/opengl-ada     > conf-incdir
+echo /custom/share/opengl-ada-repos > conf-repos
+echo > conf-fakeroot
+
+make
+make tests
+make install install-check"))
+
+  (subsection
+    (title "Reporting success")
+    (para "Please send mail to " (item address "test-results@coreland.ath.cx")
+      " with the subject:")
+    (para-verbatim example "opengl-ada test results")
+    (para "Attach the following files:")
+    (para-verbatim example
+"UNIT_TESTS/tests-summary.log_out
+sysdeps.out"))
+
+  (subsection
+    (title "Support")
+    (subsection
+      (title "IRC")
+      (para "Check " (link-ext "irc://irc.freenode.net/coreland" "#coreland")
+        " on " (link-ext "http://freenode.net")))
+    (subsection
+      (title "Mailing Lists")
+      (para (link-ext "http://mail.coreland.ath.cx/mailman/listinfo/"))))
 )
